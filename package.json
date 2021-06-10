@@ -4,7 +4,7 @@
    "description": "P3 OC",
    "main": "index.js",
    "scripts": {
-      "sass": "sass --watch ./scss/pages/index.scss:docs/styles/index.css ./scss/pages/second.scss:docs/styles/second.css --style compressed"
+      "sass": "sass --watch ./scss/:docs/ --style compressed"
    },
    "repository": {
       "type": "git",
