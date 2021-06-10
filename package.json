@@ -1,0 +1,22 @@
+{
+   "name": "cedricgourville_3_10062021",
+   "version": "1.0.0",
+   "description": "P3 OC",
+   "main": "index.js",
+   "scripts": {
+      "sass": "sass --watch ./styles/index.scss:.public/style.css"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/KirdesMF/CedricGourville_3_10062021.git"
+   },
+   "author": "Cedric Gourville",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/KirdesMF/CedricGourville_3_10062021/issues"
+   },
+   "homepage": "https://github.com/KirdesMF/CedricGourville_3_10062021#readme",
+   "devDependencies": {
+      "sass": "^1.34.1"
+   }
+}
