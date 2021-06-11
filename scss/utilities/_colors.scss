@@ -1,0 +1,15 @@
+.bg {
+   &-background {
+      background-color: var(--color-background);
+   }
+
+   &-footer {
+      background-color: var(--color-footer);
+   }
+}
+
+.color {
+   &-background {
+      color: var(--color-background);
+   }
+}
