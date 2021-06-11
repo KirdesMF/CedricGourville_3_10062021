@@ -2,7 +2,6 @@
    "name": "cedricgourville_3_10062021",
    "version": "1.0.0",
    "description": "P3 OC",
-   "main": "index.js",
    "scripts": {
       "dev": "parcel serve ./index.html --dist-dir docs",
       "build": "parcel build index.html --dist-dir docs"
