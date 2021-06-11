@@ -4,7 +4,8 @@
    "description": "P3 OC",
    "main": "index.js",
    "scripts": {
-      "dev": "parcel serve ./index.html"
+      "dev": "parcel serve ./index.html --dist-dir docs",
+      "build": "parcel build index.html --dist-dir docs"
    },
    "repository": {
       "type": "git",
