@@ -1,3 +1,9 @@
-node_modules/
-.vscode/
+package-lock.json
+.cache/
 .parcel-cache/
+dist/
+lib/
+.vscode/
+.idea/
+*.min.js
+node_modules/
