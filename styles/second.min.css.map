@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,UAAU,CACP,WAAW,CAAE,WAAW,CACxB,GAAG,CAAE,0CAA0C,CAAC,kBAAkB,CAGrE,AAAA,IAAI,AAAC,CACF,WAAW,CAAE,WAAW,CACxB,KAAK,CAAE,MAAM,CAEb,gBAAgB,CAAE,8DAA8D,CAClF",
+    "sources": [
+        "../scss/styles/second.scss",
+        "../scss/base/_fonts.scss"
+    ],
+    "names": [],
+    "file": "second.min.css"
+}

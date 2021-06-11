@@ -4,7 +4,7 @@
    "description": "P3 OC",
    "main": "index.js",
    "scripts": {
-      "sass": "sass --watch ./scss/:docs/ --style compressed"
+      "sass": "sass --watch ./scss/:public/ --style compressed"
    },
    "repository": {
       "type": "git",
@@ -15,7 +15,7 @@
    "bugs": {
       "url": "https://github.com/KirdesMF/CedricGourville_3_10062021/issues"
    },
-   "homepage": "https://github.com/KirdesMF/CedricGourville_3_10062021#readme",
+   "homepage": "https://github.com/KirdesMF/CedricGourville_3_10062021",
    "devDependencies": {
       "sass": "^1.34.1"
    }
