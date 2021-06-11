@@ -20,11 +20,19 @@
    --font-18: 1.125rem;
    --font-16: 1rem;
    --font-14: 0.875rem;
+
+   --font-main: 'Shrikhand';
+   --font-text: 'Roboto';
+   --font-text-bold: 'Roboto-Bold';
+}
+
+h1 {
+   font-family: var(--font-main);
 }
 
 body {
    font-family: 'Roboto-Bold';
-   color: blue;
-
+   color: var(--color-text);
    background-image: url('../../assets/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.webp');
+   background-position: center;
 }
