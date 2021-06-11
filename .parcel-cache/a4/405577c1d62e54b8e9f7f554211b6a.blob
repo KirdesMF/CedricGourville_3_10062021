@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="scss/index.scss">
-   <title>ohmyfood</title>
+   <link rel="stylesheet" href="9aad059bc5d68f3f29180e3aa0ebf37f">
+   <title>Document</title>
 </head>
 
 <body>
-   <h1>ohMyfood</h1>
-   <a href="/restaurants/myrestau.html">SEC</a>
-   <p>Test</p>
+   <h1>Myrestau</h1>
 </body>
 
-</html>
+</html><script src="bd8fe68fcf11fafc43f6bfac6e2c89ec"></script>

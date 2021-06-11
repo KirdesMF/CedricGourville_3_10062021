@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Shrikhand";
+  src: url("bc743e28d848b28e521a8f049172b40d") format("truetype");
+}
+body {
+  font-family: "Shrikhand";
+  color: yellow;
+  background-image: url("9313c90bb535746a01fcf9e0f1d8e24e");
+}

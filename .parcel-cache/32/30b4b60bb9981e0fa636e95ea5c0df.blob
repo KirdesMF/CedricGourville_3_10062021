@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../../assets/fonts/Shrikhand-Regular.ttf") format("truetype");
+}
+body {
+  font-family: "Shrikhand";
+  color: yellow;
+  background-image: url("../../assets/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.webp");
+}
