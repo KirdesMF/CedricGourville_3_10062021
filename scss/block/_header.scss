@@ -2,6 +2,7 @@
    position: sticky;
    top: 0;
    height: var(--header-height);
+   z-index: 2;
 
    &__inner {
       height: inherit;
@@ -20,7 +21,6 @@
       display: grid;
       place-items: center;
       gap: var(--gap-20);
-
       z-index: -1;
 
       & p {
