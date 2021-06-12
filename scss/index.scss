@@ -14,9 +14,12 @@
 @import 'utilities/panel';
 @import 'utilities/colors';
 @import 'utilities/fonts';
+@import 'utilities/center';
 
 /*----------  blocks  ----------*/
 @import 'block/header';
 @import 'block/intro';
-@import 'block/btn-cta';
 @import 'block/tutorial';
+
+@import 'block/button';
+@import 'block/card';

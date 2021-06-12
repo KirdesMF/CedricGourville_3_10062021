@@ -1,0 +1,40 @@
+.card {
+   --size-step: 1.5rem;
+   display: grid;
+   grid-template-columns: repeat(2, calc(var(--size-step) / 2)) 1fr;
+   grid-template-rows: 5rem;
+   gap: var(--gap-15);
+
+   &__step {
+      place-self: center start;
+
+      grid-column: 1 / 3;
+      grid-row: 1;
+
+      height: var(--size-step);
+      width: var(--size-step);
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 50%;
+      background-color: var(--color-primary);
+      color: var(--color-background);
+   }
+
+   &__content {
+      grid-column: 2 / -1;
+      grid-row: 1;
+      z-index: -1;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 1rem 2rem;
+
+      background-color: var(--color-background-darker);
+      border-radius: var(--radius-20);
+      box-shadow: 0 0 5px var(--color-shadow);
+   }
+}
