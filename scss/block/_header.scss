@@ -3,14 +3,33 @@
    top: 0;
    height: var(--header-height);
 
-   box-shadow: 0px 5px 5px var(--color-shadow);
-
-   & svg {
-      width: 1rem;
+   &__title {
+      box-shadow: 0px 5px 5px var(--color-shadow);
+      display: grid;
+      place-items: center;
    }
-}
 
-nav {
-   display: grid;
-   gap: 1rem;
+   &__inner {
+      height: inherit;
+      display: grid;
+      grid-template-rows: 1fr 0.7fr;
+
+      & > article {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: var(--gap-20);
+         z-index: -1;
+
+         & p {
+            position: relative;
+         }
+
+         & svg {
+            height: 0.9375rem;
+            position: absolute;
+            transform: translate(-2rem, 0);
+         }
+      }
+   }
 }

@@ -1,6 +1,10 @@
 .bg {
    &-background {
       background-color: var(--color-background);
+
+      &-darker {
+         background-color: var(--color-background-darker);
+      }
    }
 
    &-footer {
