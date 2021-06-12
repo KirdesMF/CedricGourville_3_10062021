@@ -6,6 +6,9 @@
 @import 'base/gap';
 @import 'base/global';
 
+/*----------  composition  ----------*/
+@import 'composition/grid-flow';
+
 /*----------  utilities  ----------*/
 @import 'utilities/wrapper';
 @import 'utilities/panel';
