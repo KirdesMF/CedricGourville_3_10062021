@@ -1,9 +1,9 @@
 .card {
    --size-step: 1.5rem;
+
    display: grid;
    grid-template-columns: repeat(2, calc(var(--size-step) / 2)) 1fr;
-   grid-template-rows: 5rem;
-   gap: var(--gap-15);
+   grid-template-rows: 4.6875rem;
 
    &__step {
       place-self: center start;
@@ -20,6 +20,7 @@
       border-radius: 50%;
       background-color: var(--color-primary);
       color: var(--color-background);
+      font-size: var(--font-14);
    }
 
    &__content {
@@ -31,10 +32,21 @@
       justify-content: center;
       align-items: center;
       gap: 0.8rem;
+
       padding: 1rem 2rem;
 
       background-color: var(--color-background-darker);
       border-radius: var(--radius-20);
       box-shadow: 0 0 5px var(--color-shadow);
+
+      & > svg {
+         color: var(--color-disabled);
+         flex: 0 0 15%;
+         height: 1rem;
+      }
+
+      & > p {
+         flex: 1;
+      }
    }
 }

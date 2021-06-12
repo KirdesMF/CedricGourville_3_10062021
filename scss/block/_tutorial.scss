@@ -2,5 +2,8 @@
    &__list {
       list-style: none;
       padding: 0;
+
+      display: grid;
+      gap: var(--gap-25);
    }
 }
