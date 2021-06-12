@@ -1,0 +1,9 @@
+.btn-cta {
+   background: linear-gradient(var(--color-secondary), var(--color-primary));
+
+   padding: 1rem 2rem;
+   border-radius: var(--radius-50);
+   color: var(--color-background);
+   font-size: var(--font-14);
+   box-shadow: 0 10px 10px var(--color-shadow);
+}
