@@ -1,3 +1,7 @@
 .panel {
    padding: var(--gap-flow, 1.5rem) 0;
 }
+
+.panel-footer {
+   --gap-flow: 1.5rem;
+}
