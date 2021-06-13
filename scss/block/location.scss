@@ -1,0 +1,16 @@
+.location {
+   display: grid;
+   place-items: center;
+   z-index: -1;
+
+   & p {
+      position: relative;
+      padding: var(--gap-15) 0;
+
+      & svg {
+         height: 0.9375rem;
+         position: absolute;
+         transform: translateX(-2rem);
+      }
+   }
+}
