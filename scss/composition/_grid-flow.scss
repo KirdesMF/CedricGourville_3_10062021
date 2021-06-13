@@ -2,3 +2,7 @@
    display: grid;
    gap: var(--gap-flow, 1rem);
 }
+
+.gap-25 {
+   --gap-flow: 1.5625rem;
+}
