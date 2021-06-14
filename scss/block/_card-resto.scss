@@ -1,12 +1,3 @@
-.cards-resto {
-   display: flex;
-   flex-wrap: wrap;
-
-   & > li {
-      flex: 1 0 49%;
-   }
-}
-
 .card-resto {
    display: grid;
    grid-template-rows: 11.25rem 1fr;

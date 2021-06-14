@@ -1,11 +1,3 @@
-.cards-tuto {
-   display: grid;
-   gap: var(--gap-25);
-
-   @media screen and (min-width: #{$lg} ) {
-      grid-auto-flow: column;
-   }
-}
 .card-tuto {
    --size-step: 1.5rem;
 

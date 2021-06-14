@@ -1,0 +1,27 @@
+.cards-wrapper[data-card='resto'] {
+   display: flex;
+   flex-wrap: wrap;
+   gap: var(--gap-25);
+
+   & > li {
+      flex: 1 0 49%;
+   }
+}
+
+.cards-wrapper[data-card='tuto'] {
+   display: grid;
+   gap: var(--gap-25);
+
+   @media screen and (min-width: #{$lg} ) {
+      grid-auto-flow: column;
+   }
+}
+
+.cards-wrapper[data-card='menu'] {
+   display: grid;
+   gap: var(--gap-25);
+
+   @media screen and (min-width: #{$lg} ) {
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
