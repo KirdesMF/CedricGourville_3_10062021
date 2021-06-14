@@ -18,9 +18,15 @@
       width: 100%;
 
       @media screen and (min-width: $md) {
-         filter: drop-shadow(2px 2px 0px var(--color-text))
-            drop-shadow(3px 3px 0px var(--color-text));
-         border: 5px solid var(--color-text);
+         filter: drop-shadow(1px 1px 0px hsl(267, 66%, 90%))
+            drop-shadow(1px 1px 0px hsl(267, 66%, 80%))
+            drop-shadow(1px 1px 0px hsl(267, 66%, 70%))
+            drop-shadow(1px 1px 0px hsl(267, 66%, 60%))
+            drop-shadow(1px 1px 0px hsl(267, 66%, 50%))
+            drop-shadow(1px 1px 0px hsl(267, 66%, 40%))
+            drop-shadow(1px 1px 0px hsl(267, 66%, 30%));
+
+         border: 10px solid hsl(267, 66%, 90%);
          border-radius: 0.5rem;
       }
    }
@@ -41,6 +47,7 @@
             var(--color-primary) 95%
          );
          box-shadow: 0px 5px 15px var(--color-text);
+         color: var(--color-background);
       }
    }
 }
