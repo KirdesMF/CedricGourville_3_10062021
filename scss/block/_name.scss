@@ -4,14 +4,14 @@
 
    &__inner {
       display: flex;
-   }
-
-   & h2 {
-      flex: 0 0 90%;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: var(--gap-20);
    }
 
    & svg {
-      flex: 10%;
+      width: 2rem;
+      height: 2rem;
 
       & > path {
          fill: none;

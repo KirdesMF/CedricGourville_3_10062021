@@ -1,4 +1,6 @@
 .menu {
+   --gap-flow: var(--gap-10);
+
    & h3 {
       position: relative;
       text-transform: uppercase;

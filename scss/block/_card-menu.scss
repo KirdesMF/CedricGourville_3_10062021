@@ -1,2 +1,38 @@
 .card-menu {
+   display: grid;
+   grid-template-columns: 1fr 2rem;
+   grid-template-rows: 1fr 0.5fr;
+   align-items: center;
+
+   padding: var(--gap-10);
+   gap: 0.3125rem;
+
+   border-radius: var(--radius-15);
+   box-shadow: 0 5px 5px var(--color-shadow);
+   background-color: var(--color-background);
+
+   & span {
+      grid-column: 2;
+      grid-row: 2;
+      font-size: var(--font-14);
+   }
+
+   & p,
+   & h4 {
+      grid-column: 1;
+   }
+
+   & h4 {
+      font-family: var(--font-text-bold);
+   }
+
+   & p {
+      font-family: var(--font-text);
+      font-size: var(--font-14);
+   }
+
+   & input {
+      display: none;
+      position: absolute;
+   }
 }
