@@ -27,7 +27,10 @@
    </header>
 
    <div class="[ hero ]">
-      <img src="/assets/images/toa-heftiba-DQKerTsQwi0-unsplash.webp" alt="">
+      <div class="[ hero__inner ][ md:wrapper md:panel ]">
+         <img src="/assets/images/toa-heftiba-DQKerTsQwi0-unsplash.webp" alt="">
+         <h2 class="[ font-main font-30 ]">A la française</h2>
+      </div>
    </div>
 
    <main>
@@ -46,80 +49,17 @@
       <div class="[  bg-background-darker  ]">
          <div class="[ wrapper  cards-wrapper ]" data-card="menu">
             <section class="[ menu ]">
-               <div class="wrapper">
-                  <div class="menu__inner">
-                     <h3>Entrées</h3>
-                     <ul class="[ grid-flow ]">
-                        <li>
-                           <label class="[ card-menu ]" for="entry-1">
-                              <input type="checkbox" name="entry-1" id="entry-1">
-                              <div class="[ card-menu__content ]">
-                                 <h4>Tartare de poulpe acidulé</h4>
-                                 <p>Aux zests d'orange</p>
-                              </div>
-                              <span class="[ card-menu__price ]">25€</span>
-                              <div class="[ card-menu__icon ]">
-                                 <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 512 512">
-                                    <path fill="currentColor"
-                                       d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
-                                    </path>
-                                 </svg>
-                              </div>
-                           </label>
-                        </li>
-                        <li>
-                           <label class="[ card-menu ]" for="entry-2">
-                              <input type="checkbox" name="entry-2" id="entry-2">
-                              <div class="[ card-menu__content ]">
-                                 <h4>Velouté de légumes d'antan</h4>
-                                 <p>Carotte, panais, topinambour</p>
-                              </div>
-                              <span class="[ card-menu__price ]">35€</span>
-                              <div class="[ card-menu__icon ]">
-                                 <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 512 512">
-                                    <path fill="currentColor"
-                                       d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
-                                    </path>
-                                 </svg>
-                              </div>
-                           </label>
-                        </li>
-                        <li>
-                           <label class="[ card-menu ]" for="entry-3">
-                              <input type="checkbox" name="entry-3" id="entry-3">
-                              <div class="[ card-menu__content ]">
-                                 <h4>Soupe à l'oignon</h4>
-                                 <p>Revisté</p>
-                              </div>
-                              <span class="[ card-menu__price ]">20€</span>
-                              <div class="[ card-menu__icon ]">
-                                 <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 512 512">
-                                    <path fill="currentColor"
-                                       d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
-                                    </path>
-                                 </svg>
-                              </div>
-                           </label>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-            </section>
-            <section class="[ menu ]">
-               <div class="wrapper">
-                  <h3>Plats</h3>
+               <div class="menu__inner">
+                  <h3>Entrées</h3>
                   <ul class="[ grid-flow ]">
                      <li>
-                        <label class="[ card-menu ]" for="main-1">
-                           <input type="checkbox" name="main-1" id="main-1">
+                        <label class="[ card-menu ]" for="entry-1">
+                           <input type="checkbox" name="entry-1" id="entry-1">
                            <div class="[ card-menu__content ]">
-                              <h4>Coquilles Saint-Jacques</h4>
-                              <p>Accompagnées d'une purée de panais</p>
+                              <h4>Tartare de poulpe acidulé</h4>
+                              <p>Aux zests d'orange</p>
                            </div>
-                           <span class="[ card-menu__price ]">40€</span>
+                           <span class="[ card-menu__price ]">25€</span>
                            <div class="[ card-menu__icon ]">
                               <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
                                  viewBox="0 0 512 512">
@@ -131,11 +71,11 @@
                         </label>
                      </li>
                      <li>
-                        <label class="[ card-menu ]" for="main-2">
-                           <input type="checkbox" name="main-2" id="main-2">
+                        <label class="[ card-menu ]" for="entry-2">
+                           <input type="checkbox" name="entry-2" id="entry-2">
                            <div class="[ card-menu__content ]">
-                              <h4>Magret de canard</h4>
-                              <p>Et parmentier de pommes de terres</p>
+                              <h4>Velouté de légumes d'antan</h4>
+                              <p>Carotte, panais, topinambour</p>
                            </div>
                            <span class="[ card-menu__price ]">35€</span>
                            <div class="[ card-menu__icon ]">
@@ -149,13 +89,13 @@
                         </label>
                      </li>
                      <li>
-                        <label class="[ card-menu ]" for="main-3">
-                           <input type="checkbox" name="main-3" id="main-3">
+                        <label class="[ card-menu ]" for="entry-3">
+                           <input type="checkbox" name="entry-3" id="entry-3">
                            <div class="[ card-menu__content ]">
-                              <h4>Pigeonneau d'Ille-et-Vilaine</h4>
-                              <p>Sur son lit de gnocchis aux légumes</p>
+                              <h4>Soupe à l'oignon</h4>
+                              <p>Revisté</p>
                            </div>
-                           <span class="[ card-menu__price ]">44€</span>
+                           <span class="[ card-menu__price ]">20€</span>
                            <div class="[ card-menu__icon ]">
                               <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
                                  viewBox="0 0 512 512">
@@ -170,65 +110,122 @@
                </div>
             </section>
             <section class="[ menu ]">
-               <div class="wrapper">
-                  <h3>Desserts</h3>
-                  <ul class="[ grid-flow ]">
-                     <li>
-                        <label class="[ card-menu ]" for="desserts-1">
-                           <input type="checkbox" name="desserts-1" id="desserts-1">
-                           <div class="[ card-menu__content ]">
-                              <h4>Pétales de violettes glacés</h4>
-                              <p>Et purée de noisettes</p>
-                           </div>
-                           <span class="[ card-menu__price ]">18€</span>
-                           <div class="[ card-menu__icon ]">
-                              <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
-                                 viewBox="0 0 512 512">
-                                 <path fill="currentColor"
-                                    d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
-                                 </path>
-                              </svg>
-                           </div>
-                        </label>
-                     </li>
-                     <li>
-                        <label class="[ card-menu ]" for="dessert-2">
-                           <input type="checkbox" name="dessert-2" id="dessert-2">
-                           <div class="[ card-menu__content ]">
-                              <h4>Fondant au chocolat</h4>
-                              <p>Revisté</p>
-                           </div>
-                           <span class="[ card-menu__price ]">22€</span>
-                           <div class="[ card-menu__icon ]">
-                              <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
-                                 viewBox="0 0 512 512">
-                                 <path fill="currentColor"
-                                    d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
-                                 </path>
-                              </svg>
-                           </div>
-                        </label>
-                     </li>
-                     <li>
-                        <label class="[ card-menu ]" for="dessert-3">
-                           <input type="checkbox" name="dessert-3" id="dessert-3">
-                           <div class="[ card-menu__content ]">
-                              <h4>Millefeuille croustillant</h4>
-                              <p>Myrtilles et pâte d'amande</p>
-                           </div>
-                           <span class="[ card-menu__price ]">23€</span>
-                           <div class="[ card-menu__icon ]">
-                              <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
-                                 viewBox="0 0 512 512">
-                                 <path fill="currentColor"
-                                    d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
-                                 </path>
-                              </svg>
-                           </div>
-                        </label>
-                     </li>
-                  </ul>
-               </div>
+               <h3>Plats</h3>
+               <ul class="[ grid-flow ]">
+                  <li>
+                     <label class="[ card-menu ]" for="main-1">
+                        <input type="checkbox" name="main-1" id="main-1">
+                        <div class="[ card-menu__content ]">
+                           <h4>Coquilles Saint-Jacques</h4>
+                           <p>Accompagnées d'une purée de panais</p>
+                        </div>
+                        <span class="[ card-menu__price ]">40€</span>
+                        <div class="[ card-menu__icon ]">
+                           <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 512 512">
+                              <path fill="currentColor"
+                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                              </path>
+                           </svg>
+                        </div>
+                     </label>
+                  </li>
+                  <li>
+                     <label class="[ card-menu ]" for="main-2">
+                        <input type="checkbox" name="main-2" id="main-2">
+                        <div class="[ card-menu__content ]">
+                           <h4>Magret de canard</h4>
+                           <p>Et parmentier de pommes de terres</p>
+                        </div>
+                        <span class="[ card-menu__price ]">35€</span>
+                        <div class="[ card-menu__icon ]">
+                           <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 512 512">
+                              <path fill="currentColor"
+                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                              </path>
+                           </svg>
+                        </div>
+                     </label>
+                  </li>
+                  <li>
+                     <label class="[ card-menu ]" for="main-3">
+                        <input type="checkbox" name="main-3" id="main-3">
+                        <div class="[ card-menu__content ]">
+                           <h4>Pigeonneau d'Ille-et-Vilaine</h4>
+                           <p>Sur son lit de gnocchis aux légumes</p>
+                        </div>
+                        <span class="[ card-menu__price ]">44€</span>
+                        <div class="[ card-menu__icon ]">
+                           <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 512 512">
+                              <path fill="currentColor"
+                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                              </path>
+                           </svg>
+                        </div>
+                     </label>
+                  </li>
+               </ul>
+            </section>
+            <section class="[ menu ]">
+               <h3>Desserts</h3>
+               <ul class="[ grid-flow ]">
+                  <li>
+                     <label class="[ card-menu ]" for="desserts-1">
+                        <input type="checkbox" name="desserts-1" id="desserts-1">
+                        <div class="[ card-menu__content ]">
+                           <h4>Pétales de violettes glacés</h4>
+                           <p>Et purée de noisettes</p>
+                        </div>
+                        <span class="[ card-menu__price ]">18€</span>
+                        <div class="[ card-menu__icon ]">
+                           <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 512 512">
+                              <path fill="currentColor"
+                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                              </path>
+                           </svg>
+                        </div>
+                     </label>
+                  </li>
+                  <li>
+                     <label class="[ card-menu ]" for="dessert-2">
+                        <input type="checkbox" name="dessert-2" id="dessert-2">
+                        <div class="[ card-menu__content ]">
+                           <h4>Fondant au chocolat</h4>
+                           <p>Revisté</p>
+                        </div>
+                        <span class="[ card-menu__price ]">22€</span>
+                        <div class="[ card-menu__icon ]">
+                           <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 512 512">
+                              <path fill="currentColor"
+                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                              </path>
+                           </svg>
+                        </div>
+                     </label>
+                  </li>
+                  <li>
+                     <label class="[ card-menu ]" for="dessert-3">
+                        <input type="checkbox" name="dessert-3" id="dessert-3">
+                        <div class="[ card-menu__content ]">
+                           <h4>Millefeuille croustillant</h4>
+                           <p>Myrtilles et pâte d'amande</p>
+                        </div>
+                        <span class="[ card-menu__price ]">23€</span>
+                        <div class="[ card-menu__icon ]">
+                           <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 512 512">
+                              <path fill="currentColor"
+                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                              </path>
+                           </svg>
+                        </div>
+                     </label>
+                  </li>
+               </ul>
             </section>
          </div>
       </div>

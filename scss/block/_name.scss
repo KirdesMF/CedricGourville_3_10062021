@@ -2,11 +2,21 @@
    border-radius: var(--radius-35) var(--radius-35) 0 0;
    margin-top: calc(var(--gap-40) * -1);
 
+   @media screen and (min-width: #{$md}) {
+      margin-top: 0;
+      border-radius: unset;
+   }
+
    &__inner {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding-right: var(--gap-20);
+      gap: var(--gap-15);
+
+      @media screen and (min-width: #{$md}) {
+         justify-content: unset;
+      }
    }
 
    & svg {

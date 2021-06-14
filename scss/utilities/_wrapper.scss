@@ -1,15 +1,15 @@
-.wrapper {
-   --width: 90rem;
+$width: 80rem;
 
+.wrapper {
    margin: 0 auto;
    padding: 0 var(--ineline-padding, 1rem);
-   max-width: var(--width);
+   max-width: $width;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: $md) {
    .md\:wrapper {
       margin: 0 auto;
-      padding: 0 var(--ineline-padding, 1rem);
-      max-width: 90rem;
+      padding: 0 var(--inline-padding, 1rem);
+      max-width: $width;
    }
 }

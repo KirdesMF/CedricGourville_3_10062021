@@ -2,6 +2,12 @@
    padding: var(--gap-panel, 1.5rem) 0;
 }
 
+@media screen and (min-width: #{$md}) {
+   .md\:panel {
+      padding: var(--gap-panel, 1.5rem) 0;
+   }
+}
+
 .panel-15 {
    --gap-panel: 0.9375rem;
 }

@@ -4,6 +4,8 @@
    align-items: flex-start;
    gap: var(--gap-10);
 
+   font-size: var(--font-14);
+
    & > a:nth-child(-n + 2) {
       display: flex;
       gap: var(--gap-10);
