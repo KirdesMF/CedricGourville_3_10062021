@@ -34,10 +34,7 @@ h4,
 h5,
 h6 {
    font-weight: unset;
-}
-
-h1 {
-   font-family: var(--font-main);
+   font-size: inherit;
 }
 
 body {

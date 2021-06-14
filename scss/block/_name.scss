@@ -1,0 +1,21 @@
+.name {
+   border-radius: var(--radius-35) var(--radius-35) 0 0;
+   margin-top: calc(var(--gap-40) * -1);
+
+   &__inner {
+      display: flex;
+   }
+
+   & h2 {
+      flex: 0 0 90%;
+   }
+
+   & svg {
+      flex: 10%;
+
+      & > path {
+         fill: none;
+         stroke: black;
+      }
+   }
+}
