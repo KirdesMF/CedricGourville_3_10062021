@@ -1,3 +1,11 @@
+.cards-tuto {
+   display: grid;
+   gap: var(--gap-25);
+
+   @media screen and (min-width: #{$lg} ) {
+      grid-auto-flow: column;
+   }
+}
 .card-tuto {
    --size-step: 1.5rem;
 
@@ -42,7 +50,7 @@
       box-shadow: 0 5px 5px var(--color-shadow);
 
       & > svg {
-         flex: 0 0 15%;
+         flex: 0 0 10%;
          height: 1.2rem;
          color: var(--color-disabled);
       }
