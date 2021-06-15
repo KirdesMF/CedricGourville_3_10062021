@@ -33,8 +33,10 @@
 @import 'block/hero';
 @import 'block/name';
 @import 'block/heart';
+@import 'block/stagger';
 
 /*----------  animations  ----------*/
 @import 'animation/checked';
 @import 'animation/heart';
 @import 'animation/ripple';
+@import 'animation/enter';

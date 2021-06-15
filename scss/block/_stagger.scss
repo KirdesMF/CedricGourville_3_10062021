@@ -1,0 +1,73 @@
+.stagger {
+   animation: enter 200ms forwards;
+   opacity: 0;
+   transform: translateY(2rem);
+
+   &__items {
+      animation: enter 200ms forwards;
+      opacity: 0;
+      transform: translateY(2rem);
+   }
+
+   &:nth-of-type(1) {
+      animation-delay: 0ms;
+
+      .stagger__items {
+         &:nth-of-type(1) {
+            animation-delay: 0ms;
+         }
+         &:nth-of-type(2) {
+            animation-delay: 200ms;
+         }
+         &:nth-of-type(3) {
+            animation-delay: 400ms;
+         }
+      }
+   }
+
+   &:nth-of-type(2) {
+      animation-delay: 600ms;
+
+      .stagger__items {
+         &:nth-of-type(1) {
+            animation-delay: 600ms;
+         }
+         &:nth-of-type(2) {
+            animation-delay: 800ms;
+         }
+         &:nth-of-type(3) {
+            animation-delay: 1000ms;
+         }
+      }
+   }
+
+   &:nth-of-type(3) {
+      animation-delay: 1200ms;
+      .stagger__items {
+         &:nth-of-type(1) {
+            animation-delay: 1200ms;
+         }
+         &:nth-of-type(2) {
+            animation-delay: 1400ms;
+         }
+         &:nth-of-type(3) {
+            animation-delay: 1600ms;
+         }
+      }
+   }
+
+   &:nth-of-type(4) {
+      animation-delay: 1600ms;
+      .stagger__items {
+         &:nth-of-type(1) {
+            animation-delay: 1800ms;
+         }
+         &:nth-of-type(2) {
+            animation-delay: 2000ms;
+         }
+         &:nth-of-type(3) {
+            animation-delay: 2200ms;
+         }
+      }
+   }
+}
