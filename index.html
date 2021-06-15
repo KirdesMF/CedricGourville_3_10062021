@@ -16,6 +16,20 @@
 
 <body>
    <!-- svg sprites -->
+   <svg class="defs" aria-hidden="true" focusable="false" viewBox="0 0 100" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+         <filter id="fancy-goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+            <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+            <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+         </filter>
+
+         <clipPath id="heart-clip">
+            <path
+               d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+         </clipPath>
+      </defs>
+   </svg>
    <!-- need to turn all svg to symbol ? -->
 
    <!-- header -->
@@ -121,13 +135,6 @@
                            <label for="resto-1" class="[ name__label heart ]">
                               <input class="[ heart__input ]" name="resto-1" id="resto-1" type="checkbox">
                               <svg class="[ heart__svg ]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                 <defs>
-                                    <clipPath id="heart-clip">
-                                       <path
-                                          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                                    </clipPath>
-                                 </defs>
-
                                  <g clip-path="url(#heart-clip)" overflow="hidden">
                                     <circle class="[ heart__circle ]" cx="12" cy="12" r="10" />
                                  </g>
@@ -159,13 +166,6 @@
                            <label for="resto-2" class="[ name__label heart ]">
                               <input class="[ heart__input ]" name="resto-2" id="resto-2" type="checkbox">
                               <svg class="[ heart__svg ]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                 <defs>
-                                    <clipPath id="heart-clip">
-                                       <path
-                                          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                                    </clipPath>
-                                 </defs>
-
                                  <g clip-path="url(#heart-clip)" overflow="hidden">
                                     <circle class="[ heart__circle ]" cx="12" cy="12" r="10" />
                                  </g>
@@ -197,13 +197,6 @@
                            <label for="resto-3" class="[ name__label heart ]">
                               <input class="[ heart__input ]" name="resto-3" id="resto-3" type="checkbox">
                               <svg class="[ heart__svg ]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                 <defs>
-                                    <clipPath id="heart-clip">
-                                       <path
-                                          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                                    </clipPath>
-                                 </defs>
-
                                  <g clip-path="url(#heart-clip)" overflow="hidden">
                                     <circle class="[ heart__circle ]" cx="12" cy="12" r="10" />
                                  </g>
@@ -235,13 +228,6 @@
                            <label for="resto-4" class="[ name__label heart ]">
                               <input class="[ heart__input ]" name="resto-4" id="resto-4" type="checkbox">
                               <svg class="[ heart__svg ]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                 <defs>
-                                    <clipPath id="heart-clip">
-                                       <path
-                                          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                                    </clipPath>
-                                 </defs>
-
                                  <g clip-path="url(#heart-clip)" overflow="hidden">
                                     <circle class="[ heart__circle ]" cx="12" cy="12" r="10" />
                                  </g>
