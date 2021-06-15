@@ -9,24 +9,25 @@ $bezier: cubic-bezier(0.3, 0.7, 0.4, 1.5);
    background: transparent;
    color: white;
 
-   &:hover > .shadow {
+   &:hover > .button__shadow {
       transform: scale(1.02) translateY(5px);
    }
-   &:active > .shadow {
+
+   &:active > .button__shadow {
       transform: translateY(5px);
       filter: blur(2px);
    }
 
-   &:hover > .front {
+   &:hover > .button__front {
       transform: translateY(-2px);
       filter: brightness(110%);
    }
 
-   &:active > .front {
+   &:active > .button__front {
       transform: translateY(0px);
    }
 
-   &:active > .front::before {
+   &:active > .button__front::before {
       animation: ripple 500ms $bezier;
    }
 }
@@ -73,7 +74,7 @@ $bezier: cubic-bezier(0.3, 0.7, 0.4, 1.5);
 
       background: hsla(0, 50%, 100%, 0.1);
       border-radius: 2rem;
-      transition: transform 500ms $bezier, clip-path 200ms;
+      transition: clip-path 200ms;
       transform: translateX(-50%);
       clip-path: circle(0% at 50% 50%);
    }
