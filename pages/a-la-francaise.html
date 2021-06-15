@@ -39,21 +39,29 @@
             <div class="name__inner">
                <h2 class="[ font-main font-28 ]">A la française</h2>
                <label class="[ name__label heart ]">
-                  <input type="checkbox">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                     <clipPath id="clip">
-                        <rect x="0" y="0" width="24" height="24" />
-                     </clipPath>
+                  <input class="[ heart__input ]" type="checkbox">
+                  <svg class="[ heart__svg ]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                     <defs>
+                        <clipPath id="heart-clip">
+                           <path
+                              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </clipPath>
+                     </defs>
 
-                     <path id="heart" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                     <g clip-path="url(#heart-clip)" overflow="hidden">
+                        <circle class="[ heart__circle ]" cx="12" cy="12" r="10" />
+                     </g>
+                     <path class="[ heart__path ]"
                         d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
 
-                     <use clip-path="url(#clip)" xlink:href="#heart" fill="hsl(250, 50%, 50%)" />
-                     <line pathLength="100" stroke-linecap="round" stroke-linejoin="round" x1="5" y1="4" x2="1" y="0" />
-                     <line pathLength="100" stroke-linecap="round" stroke-linejoin="round" x1="12" y1="4" x2="12"
-                        y="0" />
-                     <line pathLength="100" stroke-linecap="round" stroke-linejoin="round" x1="19" y1="4" x2="24"
-                        y="0" />
+                     <g class="lines">
+                        <line pathLength="100" stroke-linecap="round" stroke-linejoin="round" x1="5" y1="4" x2="1"
+                           y="0" />
+                        <line pathLength="100" stroke-linecap="round" stroke-linejoin="round" x1="12" y1="4" x2="12"
+                           y="0" />
+                        <line pathLength="100" stroke-linecap="round" stroke-linejoin="round" x1="19" y1="4" x2="24"
+                           y="0" />
+                     </g>
                   </svg>
                </label>
             </div>
