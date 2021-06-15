@@ -38,10 +38,24 @@
          <div class="wrapper">
             <div class="name__inner">
                <h2 class="[ font-main font-28 ]">La note enchantée</h2>
-               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                     d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-               </svg>
+               <label class="[ name__label heart ]">
+                  <input type="checkbox">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                     <clipPath id="clip">
+                        <rect x="0" y="0" width="24" height="24" />
+                     </clipPath>
+
+                     <path id="heart" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+
+                     <use clip-path="url(#clip)" xlink:href="#heart" fill="hsl(250, 50%, 50%)" />
+                     <line pathLength="100" stroke-linecap="round" stroke-linejoin="round" x1="5" y1="4" x2="1" y="0" />
+                     <line pathLength="100" stroke-linecap="round" stroke-linejoin="round" x1="12" y1="4" x2="12"
+                        y="0" />
+                     <line pathLength="100" stroke-linecap="round" stroke-linejoin="round" x1="19" y1="4" x2="24"
+                        y="0" />
+                  </svg>
+               </label>
             </div>
          </div>
       </header>

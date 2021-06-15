@@ -18,14 +18,4 @@
          justify-content: unset;
       }
    }
-
-   & svg {
-      width: 2rem;
-      height: 2rem;
-
-      & > path {
-         fill: none;
-         stroke: black;
-      }
-   }
 }
