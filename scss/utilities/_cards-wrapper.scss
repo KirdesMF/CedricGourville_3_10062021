@@ -25,3 +25,31 @@
       grid-template-columns: repeat(3, 1fr);
    }
 }
+
+@keyframes enter {
+   to {
+      opacity: 1;
+      transform: translateY(0rem);
+   }
+}
+.stagger {
+   & > * {
+      animation: enter 500ms forwards;
+      opacity: 0;
+      transform: translateY(2rem);
+
+      &:nth-of-type(1) {
+         animation-delay: 0ms;
+      }
+      &:nth-of-type(2) {
+         animation-delay: 200ms;
+      }
+      &:nth-of-type(3) {
+         animation-delay: 400ms;
+      }
+
+      &:nth-of-type(4) {
+         animation-delay: 800ms;
+      }
+   }
+}
