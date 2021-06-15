@@ -146,11 +146,19 @@
 }
 
 @keyframes out {
-   99% {
+   100% {
       opacity: 0;
    }
+}
+
+@keyframes in-main {
    100% {
-      display: none;
-      visibility: hidden;
+      opacity: 1;
    }
+}
+
+.main {
+   animation: in-main 500ms forwards;
+   animation-delay: 3s;
+   opacity: 0;
 }
