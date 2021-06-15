@@ -1,9 +1,80 @@
-.button {
-   background: linear-gradient(var(--color-secondary), var(--color-primary));
+$bezier: cubic-bezier(0.3, 0.7, 0.4, 1.5);
 
-   padding: 1rem 2rem;
+.button {
+   position: relative;
+
    border-radius: var(--radius-50);
    color: var(--color-background);
    font-size: var(--font-14);
-   box-shadow: 0 10px 10px var(--color-shadow);
+   background: transparent;
+   color: white;
+
+   &:hover > .shadow {
+      transform: scale(1.02) translateY(5px);
+   }
+   &:active > .shadow {
+      transform: translateY(5px);
+      filter: blur(2px);
+   }
+
+   &:hover > .front {
+      transform: translateY(-2px);
+      filter: brightness(110%);
+   }
+
+   &:active > .front {
+      transform: translateY(0px);
+   }
+
+   &:active > .front::before {
+      animation: ripple 500ms $bezier;
+   }
+}
+
+.button__shadow {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+
+   background: hsla(250, 0%, 10%, 0.9);
+   filter: blur(10px);
+   border-radius: 2rem;
+
+   transform: translateY(5px);
+   transition: transform 200ms $bezier, filter 200ms $bezier;
+   will-change: transform;
+}
+
+.button__front {
+   display: block;
+   position: relative;
+   overflow: hidden;
+
+   padding: 1rem 2rem;
+   width: 100%;
+   height: 100%;
+
+   background: linear-gradient(hsl(250, 70%, 60%), hsl(300, 70%, 60%));
+   border-radius: 2rem;
+   transition: transform 200ms $bezier, filter 500ms;
+   transform: translateY(-2px);
+   will-change: transform;
+
+   &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+
+      height: 100%;
+      width: 100%;
+
+      background: hsla(0, 50%, 100%, 0.1);
+      border-radius: 2rem;
+      transition: transform 500ms $bezier, clip-path 200ms;
+      transform: translateX(-50%);
+      clip-path: circle(0% at 50% 50%);
+   }
 }
