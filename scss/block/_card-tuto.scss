@@ -50,5 +50,15 @@
       & > p {
          flex: 1;
       }
+
+      transition: all 200ms;
+
+      &:hover {
+         background-color: var(--color-primary-lighter);
+
+         & > svg {
+            color: var(--color-primary);
+         }
+      }
    }
 }

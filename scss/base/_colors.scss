@@ -1,13 +1,15 @@
 :root {
    --color-primary: hsl(267, 66%, 60%);
-   --color-secondary: #ff79da;
+   --color-primary-lighter: hsl(267, 66%, 90%);
+
+   --color-secondary: hsl(317, 100%, 74%);
    --color-ternary: hsl(165, 56%, 74%);
    --color-ternary-darker: hsl(165, 56%, 34%);
 
    --color-background: #ffffff;
    --color-text: hsl(266, 10%, 22%);
-   --color-background-darker: #e5e5e5;
-   --color-disabled: #7e7e7e;
-   --color-footer: #353535;
+   --color-background-darker: hsl(0, 0%, 90%);
+   --color-disabled: hsl(0, 0%, 49%);
+   --color-footer: hsl(0, 0%, 21%);
    --color-shadow: hsla(267, 10%, 32%, 30%);
 }

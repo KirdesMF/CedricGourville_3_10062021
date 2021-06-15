@@ -17,6 +17,7 @@
 @import 'utilities/fonts';
 @import 'utilities/center';
 @import 'utilities/cards-wrapper';
+@import 'utilities/stagger';
 
 /*----------  blocks  ----------*/
 @import 'block/header';
@@ -33,7 +34,6 @@
 @import 'block/hero';
 @import 'block/name';
 @import 'block/heart';
-@import 'block/stagger';
 
 /*----------  animations  ----------*/
 @import 'animation/checked';
