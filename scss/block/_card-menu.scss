@@ -70,6 +70,19 @@
 
          transform: rotate(-360deg);
          transition: transform 500ms ease-in-out;
+
+         & > circle {
+            transition: fill 500ms;
+            fill: white;
+         }
+
+         & > path {
+            stroke: var(--color-ternary);
+            stroke-dashoffset: 0;
+            stroke-dasharray: 100;
+            fill: none;
+            animation: checked-reverse 500ms forwards;
+         }
       }
    }
 
@@ -109,6 +122,14 @@
       }
       &:checked ~ .card-menu__content {
          flex: 0 0 60%;
+      }
+
+      &:checked ~ .card-menu__icon > svg > circle {
+         fill: hsl(170deg 100% 50%);
+      }
+
+      &:checked ~ .card-menu__icon > svg > path {
+         animation: checked 500ms forwards;
       }
    }
 }

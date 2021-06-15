@@ -1,0 +1,27 @@
+@keyframes checked {
+   50% {
+      stroke-dashoffset: 100;
+      stroke: hsl(170deg 50% 50%);
+   }
+   80% {
+      stroke-dashoffset: 100;
+   }
+   to {
+      stroke-dashoffset: 0;
+      stroke: white;
+   }
+}
+
+@keyframes checked-reverse {
+   50% {
+      stroke-dashoffset: 100;
+      stroke: white;
+   }
+   80% {
+      stroke-dashoffset: 100;
+   }
+   to {
+      stroke-dashoffset: 0;
+      stroke: hsl(170deg 50% 50%);
+   }
+}
