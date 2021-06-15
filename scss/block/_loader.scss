@@ -1,0 +1,156 @@
+.overlay {
+   z-index: 5;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+
+   animation: out 500ms forwards;
+   animation-delay: 3s;
+
+   pointer-events: none;
+
+   & > svg {
+      height: 100%;
+      width: 100%;
+   }
+
+   .path {
+      transform: translateY(-100%);
+      animation: enter-path 3s;
+      fill: hsl(250deg 10% 10%);
+
+      & > path {
+         d: path('M0 0, Q50 0 100 0, L100 100, Q50 100 0 100 z');
+         animation: path 3s;
+      }
+   }
+}
+
+.spinner {
+   z-index: 5;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   filter: url(#fancy-goo);
+   pointer-events: none;
+
+   display: grid;
+   place-items: center;
+}
+
+.svg-wrapper {
+   height: 15rem;
+   width: 15rem;
+
+   overflow: hidden;
+}
+
+.spinner svg {
+   height: 100%;
+   width: 100%;
+   animation: out-spinner 500ms forwards;
+   animation-delay: 2.5s;
+
+   .int {
+      animation: rotate 2s linear;
+      transform-origin: 50px 50px;
+      fill: hsl(300deg 50% 50%);
+   }
+
+   .ext {
+      animation: rotate 4s linear reverse;
+      transform-origin: 50px 50px;
+      fill: hsl(250deg 50% 50%);
+   }
+
+   .mid {
+      fill: none;
+      stroke: none;
+   }
+}
+
+.circles {
+   animation: rotate 3s linear reverse;
+   transform-origin: 50px 50px;
+
+   & > circle {
+      animation: scale 2s;
+      transform-origin: center;
+   }
+   @for $i from 1 through 12 {
+      & > circle:nth-child(#{$i}) {
+         fill: hsl(250deg + $i * 4 50% 50% + $i);
+         animation-delay: 200ms * $i;
+      }
+   }
+}
+
+@keyframes rotate {
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+@keyframes enter-path {
+   50% {
+      transform: translateY(0%);
+   }
+   80% {
+      transform: translateY(0%);
+   }
+   to {
+      transform: translateY(100%);
+   }
+}
+
+@keyframes scale {
+   from {
+      transform: scale(1);
+   }
+   30% {
+      transform: scale(0.9);
+   }
+   60% {
+      transform: scale(1.06);
+   }
+   to {
+      transform: scale(1);
+   }
+}
+
+@keyframes path {
+   from {
+      d: path('M0 0, Q50 0 100 0, L100 100, Q50 100 0 100 z');
+   }
+   15% {
+      d: path('M0 0, Q50 0 100 0, L100 100, Q50 95 0 100 z');
+   }
+   50% {
+      d: path('M0 0, Q50 0 100 0, L100 100, Q50 100 0 100 z');
+   }
+   80% {
+      d: path('M0 0, Q50 0 100 0, L100 100, Q50 100 0 100 z');
+   }
+   95% {
+      d: path('M0 0, Q50 10 100 0, L100 100, Q50 100 0 100 z');
+   }
+   to {
+      d: path('M0 0, Q50 0 100 0, L100 100, Q50 100 0 100 z');
+   }
+}
+
+@keyframes out-spinner {
+   to {
+      transform: translateY(100%);
+   }
+}
+
+@keyframes out {
+   99% {
+      opacity: 0;
+   }
+   100% {
+      display: none;
+      visibility: hidden;
+   }
+}

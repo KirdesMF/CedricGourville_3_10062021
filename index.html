@@ -30,7 +30,39 @@
          </clipPath>
       </defs>
    </svg>
-   <!-- need to turn all svg to symbol ? -->
+
+   <!-- Loader -->
+   <div class="overlay">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+         <g class="path">
+            <path d="M0 0, Q50 0 100 0, L100 100, Q50 100 0 100 z" />
+         </g>
+      </svg>
+   </div>
+
+   <div class="spinner">
+      <div class="svg-wrapper">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <g class="circles">
+               <circle cx="50" cy="19.5" r="5" />
+               <circle cx="34.8" cy="23.6" r="5" />
+               <circle cx="23.6" cy="34.8" r="5" />
+               <circle cx="19.5" cy="50" r="5" />
+               <circle cx="23.6" cy="65.2" r="5" />
+               <circle cx="34.8" cy="76.4" r="5" />
+               <circle cx="50" cy="80.5" r="5" />
+               <circle cx="65.2" cy="76.4" r="5" />
+               <circle cx="76.4" cy="65.2" r="5" />
+               <circle cx="80.5" cy="50" r="5" />
+               <circle cx="76.4" cy="34.8" r="5" />
+               <circle cx="65.2" cy="23.6" r="5" />
+            </g>
+            <circle cx="19.5" cy="50" r="5" class="int" />
+            <circle cx="50" cy="50" r="5" class="mid" />
+            <circle cx="50" cy="19.5" r="5" class="ext" />
+         </svg>
+      </div>
+   </div>
 
    <!-- header -->
    <header class="[ header ][ bg-background font-main font-30 ]">
@@ -122,7 +154,7 @@
          <div class="wrapper">
             <div class="[ grid-flow ]">
                <h3 class="[ font-bold font-20 ]">Restaurants</h3>
-               <ul class="[ cards-wrapper stagger ]" data-card="resto">
+               <ul class="[ cards-wrapper ]" data-card="resto">
                   <li>
                      <a class="[ card-resto ]" href="/pages/la-palette-du-gout.html" data-new="true">
                         <img src="/assets/images/jay-wennington-N_Y88TWmGwA-unsplash.webp"
@@ -143,11 +175,11 @@
 
                                  <g class="lines">
                                     <line pathLength="100" stroke-linecap="round" stroke-linejoin="round" x1="5" y1="4"
-                                       x2="1" y="0" />
+                                       x2="1" y2="0" />
                                     <line pathLength="100" stroke-linecap="round" stroke-linejoin="round" x1="12" y1="4"
-                                       x2="12" y="0" />
+                                       x2="12" y2="0" />
                                     <line pathLength="100" stroke-linecap="round" stroke-linejoin="round" x1="19" y1="4"
-                                       x2="24" y="0" />
+                                       x2="24" y2="0" />
                                  </g>
                               </svg>
                            </label>
@@ -174,11 +206,11 @@
 
                                  <g class="lines">
                                     <line pathLength="100" stroke-linecap="round" stroke-linejoin="round" x1="5" y1="4"
-                                       x2="1" y="0" />
+                                       x2="1" y2="0" />
                                     <line pathLength="100" stroke-linecap="round" stroke-linejoin="round" x1="12" y1="4"
-                                       x2="12" y="0" />
+                                       x2="12" y2="0" />
                                     <line pathLength="100" stroke-linecap="round" stroke-linejoin="round" x1="19" y1="4"
-                                       x2="24" y="0" />
+                                       x2="24" y2="0" />
                                  </g>
                               </svg>
                            </label>
@@ -205,11 +237,11 @@
 
                                  <g class="lines">
                                     <line pathLength="100" stroke-linecap="round" stroke-linejoin="round" x1="5" y1="4"
-                                       x2="1" y="0" />
+                                       x2="1" y2="0" />
                                     <line pathLength="100" stroke-linecap="round" stroke-linejoin="round" x1="12" y1="4"
-                                       x2="12" y="0" />
+                                       x2="12" y2="0" />
                                     <line pathLength="100" stroke-linecap="round" stroke-linejoin="round" x1="19" y1="4"
-                                       x2="24" y="0" />
+                                       x2="24" y2="0" />
                                  </g>
                               </svg>
                            </label>
@@ -236,11 +268,11 @@
 
                                  <g class="lines">
                                     <line pathLength="100" stroke-linecap="round" stroke-linejoin="round" x1="5" y1="4"
-                                       x2="1" y="0" />
+                                       x2="1" y2="0" />
                                     <line pathLength="100" stroke-linecap="round" stroke-linejoin="round" x1="12" y1="4"
-                                       x2="12" y="0" />
+                                       x2="12" y2="0" />
                                     <line pathLength="100" stroke-linecap="round" stroke-linejoin="round" x1="19" y1="4"
-                                       x2="24" y="0" />
+                                       x2="24" y2="0" />
                                  </g>
                               </svg>
                            </label>
