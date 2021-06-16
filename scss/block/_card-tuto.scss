@@ -49,6 +49,7 @@
 
       & > p {
          flex: 1;
+         white-space: nowrap;
       }
 
       transition: all 200ms;
