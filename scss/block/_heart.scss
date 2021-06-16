@@ -5,6 +5,12 @@
    transition: transform 200ms ease;
    will-change: transform;
 
+   &[data-absolute='abs'] {
+      position: absolute;
+      bottom: var(--gap-15);
+      right: var(--gap-15);
+   }
+
    &:hover > .heart__svg circle {
       transform: translateY(10px);
    }
