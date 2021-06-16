@@ -18,11 +18,6 @@
       transform: translateY(-100%);
       animation: enter-path 3s;
       fill: hsl(250deg 10% 10%);
-
-      & > path {
-         d: path('M0 0, Q50 0 100 0, L100 100, Q50 100 0 100 z');
-         animation: path 3s;
-      }
    }
 }
 
@@ -115,27 +110,6 @@
    }
    to {
       transform: scale(1);
-   }
-}
-
-@keyframes path {
-   from {
-      d: path('M0 0, Q50 0 100 0, L100 100, Q50 100 0 100 z');
-   }
-   15% {
-      d: path('M0 0, Q50 0 100 0, L100 100, Q50 95 0 100 z');
-   }
-   50% {
-      d: path('M0 0, Q50 0 100 0, L100 100, Q50 100 0 100 z');
-   }
-   80% {
-      d: path('M0 0, Q50 0 100 0, L100 100, Q50 100 0 100 z');
-   }
-   95% {
-      d: path('M0 0, Q50 10 100 0, L100 100, Q50 100 0 100 z');
-   }
-   to {
-      d: path('M0 0, Q50 0 100 0, L100 100, Q50 100 0 100 z');
    }
 }
 
