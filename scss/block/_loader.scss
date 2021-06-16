@@ -1,6 +1,6 @@
 .overlay {
    z-index: 5;
-   position: absolute;
+   position: fixed;
    height: 100%;
    width: 100%;
 
@@ -30,7 +30,7 @@
    z-index: 5;
    height: 100%;
    width: 100%;
-   position: absolute;
+   position: fixed;
    filter: url(#fancy-goo);
    pointer-events: none;
 
