@@ -15,7 +15,7 @@
    }
 
    &__content {
-      flex: 0 0 80%;
+      flex: 1 0 90%;
 
       display: grid;
       gap: var(--gap-5);
@@ -42,7 +42,7 @@
    }
 
    &__price {
-      flex: 0 0 20%;
+      flex: min-content;
 
       padding: var(--gap-10);
 
@@ -88,7 +88,12 @@
 
    &:hover > .card-menu__content,
    &:focus-within > .card-menu__content {
-      flex: 0 0 65%;
+      flex: 0 0 75%;
+   }
+
+   &:hover > .card-menu__price,
+   &:focus-within > .card-menu__price {
+      flex: 0 0 10%;
    }
 
    &:hover > .card-menu__icon,
@@ -119,7 +124,7 @@
          transform: rotate(0deg);
       }
       &:checked ~ .card-menu__content {
-         flex: 0 0 60%;
+         flex: 0 0 70%;
       }
 
       &:checked ~ .card-menu__icon > svg > circle {
