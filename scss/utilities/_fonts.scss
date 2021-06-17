@@ -39,3 +39,7 @@
       font-size: var(--font-14);
    }
 }
+
+.fluid-title {
+   font-size: clamp(var(--font-16), var(--font-14) + 2vw, var(--font-28));
+}
