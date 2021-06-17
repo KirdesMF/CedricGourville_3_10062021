@@ -1,31 +1,28 @@
-# OpenClassRoom P3 🚀
+## OpenClassRoom P3 🚀
 
 Description : Refaire responsive maquette + animations pour FF and Chrome
 
 </br>
 
-## Animation CSS
-
 ---
 
-Début: 10 juin 2021
-Fin: 7 juillet 2021
+### Animation CSS
 
 Stack: HTML CSS/SCSS
 
-</br>
+Début: 10 juin 2021
+
+Fin Prévue: 7 juillet 2021
 
 ---
 
-## Figma file
+### Figma file
 
 [Figma](https://www.figma.com/file/YlTIS3UwsuuFqttP2WQcEt/ohmyfood?node-id=0%3A1)
 
 ---
 
-</br>
-
-## Animation Codepen
+### Animation Codepen
 
 [Card-menu](https://codepen.io/kirdesmf/pen/QWpYOGa)
 
