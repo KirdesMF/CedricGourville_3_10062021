@@ -3,3 +3,9 @@
    animation-delay: 3s;
    opacity: 0;
 }
+
+@keyframes in-main {
+   100% {
+      opacity: 1;
+   }
+}
