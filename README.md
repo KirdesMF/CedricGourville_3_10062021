@@ -24,6 +24,8 @@ Fin Prévue: 7 juillet 2021
 
 ### Animation Codepen
 
+[Loader](https://codepen.io/kirdesmf/pen/bGqPNdg)
+
 [Card-menu](https://codepen.io/kirdesmf/pen/QWpYOGa)
 
 [Stagger](https://codepen.io/kirdesmf/pen/zYZyrqo)
