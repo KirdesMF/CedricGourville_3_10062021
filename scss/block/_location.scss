@@ -1,16 +1,23 @@
 .location {
-   display: grid;
-   place-items: center;
    z-index: -1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 
-   & h2 {
-      position: relative;
-      padding: var(--gap-15) 0;
+   padding: var(--gap-15) 0;
 
-      & svg {
-         height: 0.9375rem;
-         position: absolute;
-         transform: translateX(-2rem);
+   & svg {
+      height: 0.9375rem;
+   }
+
+   &__input {
+      border: none;
+      background: inherit;
+      text-align: center;
+
+      &::placeholder {
+         color: var(--color-text);
+         text-align: center;
       }
    }
 }
