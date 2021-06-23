@@ -23,7 +23,7 @@
 
       padding: var(--gap-10);
 
-      & h4 {
+      & span:first-child {
          overflow: hidden;
          white-space: nowrap;
          font-family: var(--font-text-bold);
@@ -31,7 +31,7 @@
          max-width: 100%;
       }
 
-      & p {
+      & span:last-child {
          font-family: var(--font-text);
          font-size: var(--font-14);
          overflow: hidden;
